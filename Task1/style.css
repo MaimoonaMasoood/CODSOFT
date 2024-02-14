@@ -1,0 +1,243 @@
+  /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cormorant:wght@300&family=Crimson+Text:ital,wght@1,700&family=Josefin+Sans:ital,wght@1,300&family=Mate&family=Nunito+Sans:opsz,wght@6..12,200&family=Pacifico&family=Source+Code+Pro:ital@1&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
+  
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Caveat', cursive;
+font-family: 'Cormorant', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Mate', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Source Code Pro', monospace;
+} */
+}
+.portfolio-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+   display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    position: fixed;
+
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.left,.right{
+    height: 100vh;
+    display: flex;
+}
+.left{
+    background-color: #262525;
+    width: 70%;
+    padding-left: 3rem;
+    align-items: center;
+}
+.right{
+    background: linear-gradient(-45deg,#3877FF,#262525 70%);
+    /* background-color: #3877FF; */
+    width: 30%;
+}
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: white;
+}
+.content .intro span{
+    color: #5db9ee;
+}
+.content h1{
+    font-size: 3.5rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.3rem;
+    color: white;
+    max-width:32rem ;
+    margin: 1.1rem 0 3rem 0;
+    /* top left bottom right */
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid #3877FF;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:nth-child(1){
+    background-color: #5db9ee;
+    color: #262525;
+
+}
+button:nth-child(2){
+    background-color: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background-color:transparent;
+    color:#5db9ee ;
+}
+button:nth-child(2):hover{
+    background-color: #5db9ee;
+    color: #262525;
+   
+}
+.icons .fa-brands{
+    cursor: pointer;
+    background: linear-gradient(white,#3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+aspect-ratio: 1;
+position: absolute;
+border-radius: 50%;
+top: 50%;
+left: 70%;
+transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg,transparent 50%,#262525 50%);
+    width: 36rem;
+}
+.circle:nth-child(2){
+    background-image: url("/WhatsApp\ Image\ 2024-02-07\ at\ 22.26.54_1f16fa04.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30rem;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem white, 
+    inset 0 0 1rem white,
+     0 0 2rem #3877FF,
+     inset 0 0 2rem #3877FF,
+     0 0 4rem #3877FF,
+     inset 0 0 4rem #3877FF;
+  
+}
+.contactform{
+    padding: 0 34px;
+    padding-top: 100px;
+    font-family: 'EB Garamond', serif;
+}
+.contactform h1{
+    text-align: center;
+}
+.contactform form div{
+    padding: 1px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+   border-radius: 3px;
+   width: 231px;
+   margin: 6px 0;
+   padding: 3px 0;
+}
+#emailHelp{
+font-size: 11px;
+color: rgb(58, 41, 73);
+margin-left: 11px;
+}
+#form-check{
+    display: flex;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.btn-sm button{
+    margin:0px 3px;
+    padding: 19px 28px;
+    margin: 22px 3px;
+    border-radius: 27px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: white;
+    width: 10vw;
+}
+.skills {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Projects Section styles */
+.projects {
+    padding: 50px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+/* #contact {
+    padding: 50px;
+} */
+.resume {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.project h2{
+    margin-left: 6rem;
+}
